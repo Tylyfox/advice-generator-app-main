@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+  <div class="card">
+    <div class="idAdvice"></div>
+    <div class="advice"></div>
+    <div class="pattern"></div>
+    <div class="randomButton">
+      <img id="button" src="./images/icon-dice.svg" alt="divider">
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2,
+      reverse: true,
+    });
+  </script>
+</body>
+</html>
